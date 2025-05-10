@@ -1,3 +1,44 @@
 {
-  "transactions": []
+  "transactions": [
+    {
+      "id": "1",
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2025-05-08T22:43:13.503Z"
+    },
+    {
+      "id": "2",
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2025-04-08T22:43:13.503Z"
+    },
+    {
+      "id": "3",
+      "description": "Ignite Rocketseat",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1982,
+      "createdAt": "2024-04-08T22:43:13.503Z"
+    },
+    {
+      "id": "9594",
+      "description": "Tes",
+      "price": 2,
+      "category": "Eita",
+      "type": "income",
+      "createdAt": "2025-05-10T02:02:11.257Z"
+    },
+    {
+      "id": "0908",
+      "description": "VAa",
+      "price": 22,
+      "category": "11",
+      "type": "outcome",
+      "createdAt": "2025-05-10T02:15:02.489Z"
+    }
+  ]
 }

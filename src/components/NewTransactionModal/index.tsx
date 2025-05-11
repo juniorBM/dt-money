@@ -14,6 +14,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { api } from "../../lib/axios";
 import { TransactionContext } from "../../contexts/TransactionContext";
 import { useContext } from "react";
+import { useContextSelector } from "use-context-selector";
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -38,7 +39,12 @@ export function NewTransactionModal() {
     },
   });
 
-  const { createTransaction } = useContext(TransactionContext);
+  const createTransaction = useContextSelector(
+    TransactionContext,
+    (context) => {
+      return context.createTransaction;
+    }
+  );
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
